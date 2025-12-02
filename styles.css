@@ -361,3 +361,177 @@ footer {
   color: #9ca3af;
   font-size: 0.8rem;
 }
+/* === WORLD EYEOPENER HOME – RED / BLACK / GREY THEME === */
+
+.home-body {
+  background: radial-gradient(circle at top, #111111 0, #050505 45%, #000000 100%);
+  color: #e5e5e5;
+}
+
+/* Top nav – flat, minimal, high contrast */
+.home-navbar {
+  border-bottom: 1px solid #3f3f46;
+  background: rgba(0, 0, 0, 0.92);
+}
+
+.home-logo span:first-child {
+  letter-spacing: 0.18em;
+  font-size: 0.9rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.home-logo span:last-child {
+  color: #a1a1aa;
+  font-size: 0.7rem;
+}
+
+.home-nav-links a {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  padding: 0.35rem 0.75rem;
+  border-radius: 999px;
+  border: 1px solid transparent;
+}
+
+.home-nav-links a:hover {
+  border-color: #ef4444;
+  background: #111111;
+}
+
+/* Center hero – logo style */
+.home-main {
+  min-height: calc(100vh - 120px);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 3.5rem 1.5rem 2.5rem;
+}
+
+.home-hero {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.home-hero-inner {
+  max-width: 720px;
+}
+
+.home-kicker {
+  font-size: 0.7rem;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: #a1a1aa;
+  margin-bottom: 0.7rem;
+}
+
+.home-title {
+  font-size: clamp(2.6rem, 8vw, 4.4rem);
+  line-height: 0.9;
+  font-weight: 900;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: #f4f4f5;
+  text-shadow: 0 0 20px rgba(239, 68, 68, 0.35);
+}
+
+.home-subtitle {
+  margin-top: 1rem;
+  font-size: 0.95rem;
+  color: #a1a1aa;
+}
+
+/* Big block grid – like SKRILLEX MUSIC / TOUR / MERCH rows */
+.home-grid {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  gap: 0.75rem;
+}
+
+@media (min-width: 720px) {
+  .home-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+.home-block {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1.2rem 1.4rem;
+  border-radius: 0.9rem;
+  border: 1px solid #27272a;
+  background: radial-gradient(circle at top left, #1f1f1f 0, #050505 60%, #000 100%);
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+  transition: border 0.15s ease, transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
+}
+
+.home-block::before {
+  content: "";
+  position: absolute;
+  inset: -40%;
+  background: radial-gradient(circle at top, rgba(239, 68, 68, 0.1), transparent 60%);
+  opacity: 0;
+  transition: opacity 0.15s ease;
+}
+
+.home-block-label {
+  position: relative;
+  z-index: 1;
+  font-size: 0.95rem;
+  font-weight: 800;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: #f97373;
+}
+
+.home-block-sub {
+  position: relative;
+  z-index: 1;
+  margin-top: 0.4rem;
+  font-size: 0.75rem;
+  color: #a1a1aa;
+}
+
+.home-block:hover {
+  border-color: #ef4444;
+  transform: translateY(-2px);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.8);
+  background: radial-gradient(circle at top left, #1c1917 0, #000 70%);
+}
+
+.home-block:hover::before {
+  opacity: 1;
+}
+
+/* Thin red strip for contact, like a footer callout */
+.home-strip {
+  margin: 2.2rem auto 0;
+  max-width: 1100px;
+  border-top: 1px solid #27272a;
+  padding-top: 0.9rem;
+}
+
+.home-strip-text {
+  font-size: 0.75rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #a1a1aa;
+}
+
+.home-strip-email {
+  color: #ef4444;
+}
+
+/* Footer – keep minimal */
+.home-footer {
+  border-top: 1px solid #27272a;
+  background: #000;
+}
