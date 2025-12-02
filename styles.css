@@ -535,3 +535,12 @@ footer {
   border-top: 1px solid #27272a;
   background: #000;
 }
+body {
+  background: url("eye.jfif"), radial-gradient(circle at top, #18181b 0, #050505 55%, #000000 100%);
+  background-size: 70vw;
+  background-repeat: no-repeat;
+  background-position: center 10vh;
+  background-attachment: fixed;
+  color: #e5e5e5;
+  min-height: 100vh;
+}
