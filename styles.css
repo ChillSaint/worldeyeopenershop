@@ -558,3 +558,12 @@ body::before {
   transform: translateY(-3px);
   box-shadow: 0 6px 20px rgba(255,0,80,0.5);
 }
+.cta-button {
+  padding: 14px 28px;
+  background: linear-gradient(90deg, #ff3b3b, #3b6cff);
+  color: white;
+  border-radius: 10px;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 0 20px rgba(255, 59, 59, 0.4);
+}
